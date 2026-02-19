@@ -7,7 +7,7 @@
 [![npm version](https://img.shields.io/npm/v/embrix.svg)](https://www.npmjs.com/package/embrix)
 [![npm downloads](https://img.shields.io/npm/dm/embrix.svg)](https://www.npmjs.com/package/embrix)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Paper](https://img.shields.io/badge/Paper-PDF-red.svg)](https://tahsinkoc.vercel.app/papers/embrix-nodejs-embedding)
+[![Paper](https://img.shields.io/badge/Paper-PDF-red.svg)](https://tahsinkoc.com/papers/embrix-nodejs-embedding)
 
 Production-ready local text embeddings using `@xenova/transformers`. Zero external API calls, runs entirely in Node.js.
 
