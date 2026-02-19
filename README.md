@@ -201,6 +201,10 @@ npm run benchmark -- --batch-size 50
 npm run benchmark -- --help
 ```
 
+## Experimental Benchmark Results
+
+For comprehensive experimental benchmark results, including performance comparisons across different models and configurations, see the [test-embrix-experimental](https://github.com/tahsinkoc/test-embrix-experimental) repository.
+
 ## Example Output
 
 ```
