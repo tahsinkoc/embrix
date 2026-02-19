@@ -1,15 +1,20 @@
 # embrix
 
+[![npm version](https://img.shields.io/npm/v/embrix.svg)](https://www.npmjs.com/package/embrix)
+[![npm downloads](https://img.shields.io/npm/dm/embrix.svg)](https://www.npmjs.com/package/embrix)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Paper](https://img.shields.io/badge/Paper-PDF-red.svg)](https://example.com/paper.pdf)
+
 Production-ready local text embeddings using `@xenova/transformers`. Zero external API calls, runs entirely in Node.js.
 
 ## Features
 
-- 🚀 **Local Execution** - No API calls, runs entirely on your machine
-- 🎯 **Two Optimized Models** - MiniLM and BGE for different use cases
-- 📦 **Zero Dependencies** - Only `@xenova/transformers` as dependency
-- 🔒 **Type-Safe** - Full TypeScript support with strict typing
-- ⚡ **Efficient** - Lazy loading, singleton pattern, batch processing
-- 📊 **Benchmark Tools** - Built-in performance measurement utilities
+- Local Execution - No API calls, runs entirely on your machine
+- Two Optimized Models - MiniLM and BGE for different use cases
+- Zero Dependencies - Only `@xenova/transformers` as dependency
+- Type-Safe - Full TypeScript support with strict typing
+- Efficient - Lazy loading, singleton pattern, batch processing
+- Benchmark Tools - Built-in performance measurement utilities
 
 ## Installation
 
@@ -39,7 +44,7 @@ const embeddings = await embedder.embedBatch([
 const hello = await embedder.embed("Hello!");
 const goodbye = await embedder.embed("Goodbye!");
 const similarity = cosineSimilarity(hello, goodbye);
-console.log(`Similarity: ${similarity}`); // ~0.3-0.5
+console.log(`Similarity: ${similarity}`);
 ```
 
 ## Supported Models
@@ -131,7 +136,7 @@ Calculate Euclidean (L2) distance between two vectors.
 const distance = euclideanDistance(vector1, vector2);
 ```
 
-#### `findMostSimilar(query: Float32Array, candidates: Float32Array[]): { index: number; similarity: number }`
+#### `findMostSimilar(query: Float32Array, candidates: Float32Array[])`
 
 Find the most similar vector to a query.
 
@@ -199,15 +204,6 @@ npm run benchmark -- --help
 ## Example Output
 
 ```
-╔════════════════════════════════════════════════════════════╗
-║                 EMBRIX BENCHMARK SUITE                     ║
-║         Local Text Embedding Performance Tests              ║
-╚════════════════════════════════════════════════════════════╝
-
-Supported Models:
-  - all-MiniLM-L6-v2 (minilm): 384D
-  - bge-small-en-v1.5 (bge): 384D
-
 ============================================================
 Benchmark: all-MiniLM-L6-v2
 Model: minilm
@@ -225,12 +221,6 @@ Running batch benchmark (100 texts)...
   Total duration: 567.89ms
   Avg per embedding: 5.68ms
   Throughput: 176.09 embeddings/sec
-
-------------------------------------------------------------
-Summary:
-  Total benchmark time: 2925.90ms
-  Cold start overhead: 2333.33ms
-------------------------------------------------------------
 ```
 
 ## Architecture
@@ -281,10 +271,19 @@ Only `@xenova/transformers` is required. This keeps the package:
 - Node.js >= 18.0.0
 - ~500MB disk space for model cache (first run)
 
+## Citation
+
+If you use embrix in your research, please cite:
+
+```bibtex
+@software{embrix2024,
+  title = {embrix: Production-Ready Local Text Embeddings for Node.js},
+  author = {Your Name},
+  year = {2024},
+  url = {https://github.com/yourusername/embrix}
+}
+```
+
 ## License
 
 MIT
-
-## Contributing
-
-Contributions are welcome! Please ensure all tests pass and maintain the existing code style.
