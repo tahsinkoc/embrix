@@ -1,6 +1,6 @@
 {
   "name": "embrix",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Production-ready local text embeddings using @xenova/transformers. Supports MiniLM and BGE models with zero external dependencies.",
   "author": "",
   "license": "MIT",
