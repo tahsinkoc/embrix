@@ -1,3 +1,7 @@
+<div align="center">
+  <img src="https://tahsinkoc.com/banners/embrix-logo.png" alt="embrix logo" width="400">
+</div>
+
 # embrix
 
 [![npm version](https://img.shields.io/npm/v/embrix.svg)](https://www.npmjs.com/package/embrix)
