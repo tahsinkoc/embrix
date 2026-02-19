@@ -280,11 +280,11 @@ Only `@xenova/transformers` is required. This keeps the package:
 If you use embrix in your research, please cite:
 
 ```bibtex
-@software{embrix2024,
+@software{embrix2026,
   title = {embrix: Production-Ready Local Text Embeddings for Node.js},
-  author = {Your Name},
-  year = {2024},
-  url = {https://github.com/yourusername/embrix}
+  author = {Tahsin Özgür Koç},
+  year = {2026},
+  url = {https://github.com/tahsinkoc/embrix}
 }
 ```
 
